@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "montserrat", sans-serif;
+ }
+
+ body{
+   background-image: linear-gradient(120deg, #487eb0,#fbc531);
+   min-height: 100vh;
+
+ }
+
+ h2{
+   padding: 18px;
+   color: #c9baba;
+   font-size: xx-large;
+   text-align: center;
+ }
+ .App{
+   
+   margin:  50px auto;
+   width: 80%;
+   padding: 30px;
+ }
+
+.form-input{
+  float: left;
+  margin-bottom: 30px;
+  width: 82%;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: none;
+  padding: 10px;
+  outline: none;
+  font-size: 22px;
+  color: #dbdbdb;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ .course-list{
+   width: 100%;
+   background-color: rgba(255, 255, 255, .5);
+   padding: 10px;
+   margin: 6px 0;
+   overflow: hidden;
+  font-weight: bold;
+  font-size: 22px;
+ }
+
+ .course-list i{
+   float: right;
+   margin-left: 20px;
+   cursor: pointer;
+ }
+
+ .myButton {
+  margin-bottom: 30px;
+
+   width: 15%;
+   float: right;
+	background-color:#202040;
+  border-radius:28px;
+  border-color:#202040 ;
+	cursor:pointer;
+	color:#c9baba;
+	font-size:19px;
+	padding:7px 11px;
+}
+.myButton:hover {
+	background-color:#4d4c7d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
