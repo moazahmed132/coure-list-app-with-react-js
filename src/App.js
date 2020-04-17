@@ -28,13 +28,15 @@ class App extends Component {
 
   addCourse = (e) => {
     e.preventDefault();
-    let current = this.state.current;
+    let current = this.state.current.trim();
     let courses = this.state.courses;
-    courses.push({ name: current })
-    this.setState({
-      courses,
-      current: ''
-    })
+    if (current !== "") {
+      courses.push({ name: current })
+      this.setState({
+        courses,
+        current: ''
+      })
+    }
   }
 
   editCourse = (index, value) => {

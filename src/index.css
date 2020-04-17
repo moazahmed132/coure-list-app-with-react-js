@@ -42,7 +42,7 @@
    width: 100%;
    background-color: rgba(255, 255, 255, .5);
    padding: 10px;
-   margin: 6px 0;
+   margin: 8px 0;
    overflow: hidden;
   font-weight: bold;
   font-size: 22px;
@@ -56,7 +56,7 @@
 
  .myButton {
   margin-bottom: 30px;
-
+  opacity: .8;
    width: 15%;
    float: right;
 	background-color:#202040;
@@ -68,7 +68,7 @@
 	padding:7px 11px;
 }
 .myButton:hover {
-	background-color:#4d4c7d;
+  opacity: 1;
 }
 .myButton:active {
 	position:relative;
