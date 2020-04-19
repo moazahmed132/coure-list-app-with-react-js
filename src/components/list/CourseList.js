@@ -20,12 +20,14 @@ class CourseList extends Component {
   updateCourseItem = (e) => {
     e.preventDefault();
     this.props.editCourse(this.props.index, this.input.value)
-    this.toggleState()
-
+    if (this.input.value.trim() !== "") {
+      this.toggleState()
+    }
 
   }
 
   renderUpdateForm = () => {
+
     return (
       <form onSubmit={this.updateCourseItem}>
         <input className="form-input"
